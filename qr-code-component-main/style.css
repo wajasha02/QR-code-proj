@@ -1,53 +1,64 @@
-  
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Outfit", sans-serif;
+}
 body {
-    background-color: hsl(220, 15%, 55%);
+    background-color: hsl(212, 45%, 89%);
     height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    font-family: "Outfit", sans-serif;
-}
-
-.container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
 
 .qr-code {
-    
     background-color: hsl(0, 0%, 100%);
-    border-radius: 10px;
-    padding: 10px;
-    width: 50%;
+    border-radius: 0.885rem;
+    margin: 0 1rem;
+    padding: 1rem;
+    max-width: 20rem;
+    box-shadow: 0px 5px 15px 5px rgba(0, 0, 0, 0.125);
 }
 
 .qr-code img {
+    display: block;
     width: 100%;
-    border-radius: 10px;
+    border-radius: 0.6rem;
 }
 
 .title {
     text-align: center;
-    padding-left: 12px;
-    padding-right: 12px;
+    margin-top: 0.5rem;
+    padding: 0.8rem;
     font-size: 15px;
+    font-weight: 700;
     color: hsl(218, 44%, 22%);
 }
 .description {
     text-align: center;
-    padding-left: 12px;
-    padding-right: 12px;
-    font-size: 15px;
-    color: hsl(212, 9%, 66%);
+    padding: 0.1rem 0.8rem;
+    margin-bottom: 1.1rem;
+    font-size: 16px;
+    font-weight: 400;
+    color: hsl(220, 15%, 55%);
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 1rem;
+    background-color: hsl(212, 45%, 89%);
+    margin: 1rem;
 }
 
   .attribution {
-    margin-top: 30px;
-    font-size: 13px;
+    font-size: 15px;
+    font-weight: 400;
     text-align: center;
+    color:  hsl(220, 15%, 55%);;
   }
   .attribution a {
     color: hsl(228, 45%, 44%);
